@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 30, 2021 at 10:02 AM
+-- Generation Time: Mar 30, 2021 at 11:18 AM
 -- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- PHP Version: 8.0.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -51,11 +51,8 @@ INSERT INTO `address` (`prefix`, `address_id`, `street1`, `street2`, `village_id
 ('MCC', 9, 'Dr. Susilo V No.80 RT 003 RW 005', NULL, 9),
 ('MCC', 10, 'Ancol Utara 1 No.78A RT 002 RW 007', NULL, 1),
 ('MCC', 11, 'Tipar Cakung RT 005 RW 009', NULL, 2),
-('MCC', 12, 'Masda II No.25B RT005 RW009', NULL, 11),
-('MCC', 13, 'KI Hajar Dewantara KP sukamantri RT 004 RW 001', NULL, 13),
-('MCC', 16, NULL, NULL, 8),
-('MCC', 17, NULL, NULL, 10),
-('MCC', 18, NULL, NULL, 8);
+('MCC', 12, 'Masda No 25 B RT 005 RW 009', NULL, 11),
+('MCC', 13, 'KI Hajar Dewantara KP sukamantri RT 004 RW 001', NULL, 13);
 
 -- --------------------------------------------------------
 
@@ -86,11 +83,8 @@ INSERT INTO `contact` (`prefix`, `contact_id`, `phone`, `linkedin`) VALUES
 ('MCC', 9, '0895606123796', 'linkedin.com/in/jedwins/'),
 ('MCC', 10, '08561389666', 'linkedin.com/in/zahrazakiyahsalsabilakurnia/'),
 ('MCC', 11, '089696262649', 'linkedin.com/in/auliasyifa30/'),
-('MCC', 12, '087782082058', 'linkedin.com/in/williamyangjaya/'),
-('MCC', 13, '089614533736', 'linkedin.com/in/arnumsari17/'),
-('MCC', 16, '0822xxxx', 'anak cantik'),
-('MCC', 17, '0822xxxx0088', 'GAPUNYA'),
-('MCC', 18, '0822xxxx', 'gatau nih');
+('MCC', 12, '087782082058', 'linkedin/williamyangjaya'),
+('MCC', 13, '089614533736', 'linkedin.com/in/arnumsari17/');
 
 -- --------------------------------------------------------
 
@@ -120,13 +114,7 @@ INSERT INTO `district` (`district_id`, `kab`, `district_name`, `province_id`) VA
 (8, 'Kota', 'Pekanbaru', 6),
 (9, 'Kab.', 'Semarang', 5),
 (10, 'Kab.', 'Sleman', 2),
-(11, 'Kab.', 'Tangerang', 1),
-(20, 'Kab.', 'Jongol', 3),
-(21, 'Kab.', 'Sumedang', 4),
-(22, 'Kab.', 'Kuningan', 4),
-(23, 'Kota', 'Owww', 15),
-(24, 'Kota', 'Wawwww', 6),
-(25, 'Kota', 'Walung Poh', 16);
+(11, 'Kab.', 'Tangerang', 1);
 
 -- --------------------------------------------------------
 
@@ -147,22 +135,19 @@ CREATE TABLE `education` (
 --
 
 INSERT INTO `education` (`prefix`, `education_id`, `degree`, `major_id`, `university_id`) VALUES
-('MCC', 1, 'S1', 13, 5),
-('MCC', 2, 'S1', 10, 7),
-('MCC', 3, 'S1', 9, 13),
-('MCC', 4, 'S1', 13, 2),
-('MCC', 5, 'S1', 13, 9),
-('MCC', 6, 'D4', 13, 3),
-('MCC', 7, 'S1', 8, 12),
-('MCC', 8, 'S1', 11, 6),
-('MCC', 9, 'S1', 12, 1),
-('MCC', 10, 'D4', 14, 4),
-('MCC', 11, 'S1', 13, 10),
-('MCC', 12, 'S1', 8, 11),
-('MCC', 13, 'S1', 8, 11),
-('MCC', 16, 'S1', 8, 12),
-('MCC', 17, 'S3', 10, 7),
-('MCC', 18, 'S1', 8, 12);
+('MCC', 1, 'S1', 6, 5),
+('MCC', 2, 'S1', 3, 7),
+('MCC', 3, 'S1', 2, 13),
+('MCC', 4, 'S1', 6, 2),
+('MCC', 5, 'S1', 6, 9),
+('MCC', 6, 'D4', 6, 3),
+('MCC', 7, 'S1', 1, 12),
+('MCC', 8, 'S1', 4, 6),
+('MCC', 9, 'S1', 5, 1),
+('MCC', 10, 'D4', 7, 4),
+('MCC', 11, 'S1', 6, 10),
+('MCC', 12, 'S1', 1, 8),
+('MCC', 13, 'S1', 1, 11);
 
 -- --------------------------------------------------------
 
@@ -196,10 +181,7 @@ INSERT INTO `employee` (`prefix`, `employee_id`, `employee_name`, `birth_date`, 
 ('MCC', 10, 'Zahra Zakiyah Salsabila Kurnia', '1997-09-27', 'Perempuan', 'zahrazakiyahsk@gmail.com'),
 ('MCC', 11, 'Aulia Syifa', '1999-06-30', 'Perempuan', 'auliasyifa346@gmail.com'),
 ('MCC', 12, 'William Yangjaya', '1997-03-01', 'Laki-laki', 'william.yangjaya@ms.mii.co.id'),
-('MCC', 13, 'Arnum Sari Khoirunnisa', '1998-04-17', 'Perempuan', 'arnum.khoirunnisa@ms.mii.co.id'),
-('MCC', 16, 'employee baru', '1997-10-29', 'Perempuan', 'email baru'),
-('MCC', 17, 'Usep', '2000-03-29', 'Laki-laki', 'Karena String'),
-('MCC', 18, 'Anisa Tri Rahayu', '1997-10-29', 'Perempuan', 'trirahayuanisa@gmail.com');
+('MCC', 13, 'Arnum Sari Khoirunnisa', '1998-04-17', 'Perempuan', 'arnum.khoirunnisa@ms.mii.co.id');
 
 -- --------------------------------------------------------
 
@@ -218,13 +200,34 @@ CREATE TABLE `major` (
 --
 
 INSERT INTO `major` (`major_id`, `major_name`, `count`) VALUES
-(8, 'Fisika', 3),
-(9, 'Matematika', 1),
-(10, 'Sistem Informasi', 1),
-(11, 'Teknik Fisika', 1),
-(12, 'Teknik Geofisika', 1),
-(13, 'Teknik Informatika', 5),
-(14, 'Teknik Telekomunikasi', 1);
+(1, 'Fisika', 3),
+(2, 'Matematika', 1),
+(3, 'Sistem Informasi', 1),
+(4, 'Teknik Fisika', 1),
+(5, 'Teknik Geofisika', 1),
+(6, 'Teknik Informatika', 5),
+(7, 'Teknik Telekomunikasi', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `privileges`
+--
+
+CREATE TABLE `privileges` (
+  `privilege_id` int(3) NOT NULL,
+  `privilege_name` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `privileges`
+--
+
+INSERT INTO `privileges` (`privilege_id`, `privilege_name`) VALUES
+(1, 'create'),
+(2, 'read'),
+(3, 'update'),
+(4, 'delete');
 
 -- --------------------------------------------------------
 
@@ -243,18 +246,44 @@ CREATE TABLE `province` (
 
 INSERT INTO `province` (`province_id`, `province_name`) VALUES
 (1, 'Banten'),
-(2, 'DI Yogyakarta'),
+(2, 'DIY'),
 (3, 'DKI Jakarta'),
 (4, 'Jawa Barat'),
 (5, 'Jawa Tengah'),
 (6, 'Riau'),
-(7, 'Sumatera Selatan'),
-(8, 'Papua'),
-(9, 'Maluku'),
-(13, 'Gorontalo'),
-(14, 'Bali'),
-(15, 'Nusa Tenggara Timur'),
-(16, 'Aceh');
+(7, 'Sumatera Selatan');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `role`
+--
+
+CREATE TABLE `role` (
+  `role_id` int(3) NOT NULL,
+  `role_name` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `role`
+--
+
+INSERT INTO `role` (`role_id`, `role_name`) VALUES
+(1, 'admin'),
+(2, 'trainer'),
+(3, 'trainee'),
+(4, 'guest');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `role_privileges`
+--
+
+CREATE TABLE `role_privileges` (
+  `privilege_id` int(3) NOT NULL,
+  `role_id` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -285,8 +314,7 @@ INSERT INTO `subdistrict` (`subdistrict_id`, `subdistrict_name`, `district_id`) 
 (10, 'Pabelan', 9),
 (11, 'Penjaringan', 6),
 (12, 'Regol', 1),
-(13, 'Rumbai', 8),
-(14, 'Kokorobet', 25);
+(13, 'Rumbai', 8);
 
 -- --------------------------------------------------------
 
@@ -322,6 +350,56 @@ INSERT INTO `university` (`university_id`, `university_name`, `counts`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `user_id` int(3) NOT NULL,
+  `user_name` varchar(50) NOT NULL,
+  `user_password` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`user_id`, `user_name`, `user_password`) VALUES
+(1, 'ikhsan_1', 'ikhsan123'),
+(2, 'panji_2', 'panji123'),
+(3, 'fadel_3', 'fadel123'),
+(4, 'rafi_4', 'rafi123'),
+(5, 'regita_5', 'regita123'),
+(6, 'yosie_6', 'yosie123'),
+(7, 'jaka_7', 'jaka123'),
+(8, 'vela_8', 'vela123'),
+(9, 'edwin_9', 'edwin123'),
+(10, 'zaki_10', 'zaki123'),
+(11, 'aul_3', 'aul123'),
+(12, 'wiliam_12', 'wiliam123'),
+(13, 'arnum_13', 'arnum123');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_role`
+--
+
+CREATE TABLE `user_role` (
+  `user_id` int(3) NOT NULL,
+  `role_id` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user_role`
+--
+
+INSERT INTO `user_role` (`user_id`, `role_id`) VALUES
+(1, 1),
+(2, 2);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `village`
 --
 
@@ -349,8 +427,7 @@ INSERT INTO `village` (`village_id`, `village_name`, `zip_code`, `subdistrict_id
 (10, 'Limbungan Baru', '28261', 13),
 (11, 'Pejagalan', '14450', 11),
 (12, 'Sinduharjo', '55581', 9),
-(13, 'Sukaraya', '17530', 7),
-(18, 'Kiromang', '90896', 14);
+(13, 'Sukaraya', '17530', 7);
 
 --
 -- Indexes for dumped tables
@@ -403,10 +480,29 @@ ALTER TABLE `major`
   ADD PRIMARY KEY (`major_id`);
 
 --
+-- Indexes for table `privileges`
+--
+ALTER TABLE `privileges`
+  ADD PRIMARY KEY (`privilege_id`);
+
+--
 -- Indexes for table `province`
 --
 ALTER TABLE `province`
   ADD PRIMARY KEY (`province_id`);
+
+--
+-- Indexes for table `role`
+--
+ALTER TABLE `role`
+  ADD PRIMARY KEY (`role_id`);
+
+--
+-- Indexes for table `role_privileges`
+--
+ALTER TABLE `role_privileges`
+  ADD KEY `fk_privilege_k` (`privilege_id`),
+  ADD KEY `fk_role_k` (`role_id`);
 
 --
 -- Indexes for table `subdistrict`
@@ -420,6 +516,21 @@ ALTER TABLE `subdistrict`
 --
 ALTER TABLE `university`
   ADD PRIMARY KEY (`university_id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`user_id`),
+  ADD UNIQUE KEY `user_name` (`user_name`),
+  ADD KEY `user_id` (`user_id`);
+
+--
+-- Indexes for table `user_role`
+--
+ALTER TABLE `user_role`
+  ADD KEY `fk_users` (`user_id`),
+  ADD KEY `fk_role` (`role_id`);
 
 --
 -- Indexes for table `village`
@@ -436,31 +547,31 @@ ALTER TABLE `village`
 -- AUTO_INCREMENT for table `address`
 --
 ALTER TABLE `address`
-  MODIFY `address_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `address_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `contact_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `contact_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `district`
 --
 ALTER TABLE `district`
-  MODIFY `district_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `district_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `education`
 --
 ALTER TABLE `education`
-  MODIFY `education_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `education_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `employee`
 --
 ALTER TABLE `employee`
-  MODIFY `employee_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `employee_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `major`
@@ -472,13 +583,13 @@ ALTER TABLE `major`
 -- AUTO_INCREMENT for table `province`
 --
 ALTER TABLE `province`
-  MODIFY `province_id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `province_id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `subdistrict`
 --
 ALTER TABLE `subdistrict`
-  MODIFY `subdistrict_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `subdistrict_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `university`
@@ -490,7 +601,7 @@ ALTER TABLE `university`
 -- AUTO_INCREMENT for table `village`
 --
 ALTER TABLE `village`
-  MODIFY `village_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `village_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Constraints for dumped tables
@@ -524,10 +635,30 @@ ALTER TABLE `education`
   ADD CONSTRAINT `university_uid_fk` FOREIGN KEY (`university_id`) REFERENCES `university` (`university_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
+-- Constraints for table `role_privileges`
+--
+ALTER TABLE `role_privileges`
+  ADD CONSTRAINT `fk_privilege` FOREIGN KEY (`privilege_id`) REFERENCES `privileges` (`privilege_id`),
+  ADD CONSTRAINT `fk_role` FOREIGN KEY (`role_id`) REFERENCES `role` (`role_id`);
+
+--
 -- Constraints for table `subdistrict`
 --
 ALTER TABLE `subdistrict`
   ADD CONSTRAINT `district_did_fk` FOREIGN KEY (`district_id`) REFERENCES `district` (`district_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `users`
+--
+ALTER TABLE `users`
+  ADD CONSTRAINT `fk_user` FOREIGN KEY (`user_id`) REFERENCES `employee` (`employee_id`);
+
+--
+-- Constraints for table `user_role`
+--
+ALTER TABLE `user_role`
+  ADD CONSTRAINT `role_fk` FOREIGN KEY (`role_id`) REFERENCES `role` (`role_id`),
+  ADD CONSTRAINT `user_fk` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
 
 --
 -- Constraints for table `village`
