@@ -11,24 +11,24 @@ import com.dto.Employee2ProvinceDto;
 import com.dto.EmployeeRegistDto;
 import com.entities.Addresses;
 import com.entities.Contacts;
-import com.entities.Districts;
+//import com.entities.Districts;
 import com.entities.Educations;
 import com.entities.Employees;
 import com.entities.Majors;
-import com.entities.Provinces;
-import com.entities.Subdistricts;
+//import com.entities.Provinces;
+//import com.entities.Subdistricts;
 import com.entities.Universities;
 import com.entities.Villages;
-import com.repositories.AddressRepository;
-import com.repositories.ContactRepository;
-import com.repositories.DistrictRepository;
-import com.repositories.EducationRepository;
-import com.repositories.EmployeeRepository;
-import com.repositories.MajorRepository;
-import com.repositories.ProvinceRepository;
-import com.repositories.SubdistrictRepository;
-import com.repositories.UniversityRepository;
-import com.repositories.VillageRepository;
+//import com.repositories.AddressRepository;
+//import com.repositories.ContactRepository;
+//import com.repositories.DistrictRepository;
+//import com.repositories.EducationRepository;
+//import com.repositories.EmployeeRepository;
+//import com.repositories.MajorRepository;
+//import com.repositories.ProvinceRepository;
+//import com.repositories.SubdistrictRepository;
+//import com.repositories.UniversityRepository;
+//import com.repositories.VillageRepository;
 import com.services.EmployeeService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -131,6 +131,36 @@ public class EmployeeController {
         employeeService.insertByEmployee(newEmployee);
         return "insert employee";
     }
+//    @PostMapping("/insert-by-employee")
+//    public String saveEmployee (@RequestBody EmployeeRegistDto employeeReg){
+//        Employees newEmployee = new Employees(
+//                employeeReg.getPrefix(),
+//                employeeReg.getEmployeeId(),
+//                employeeReg.getEmployeeName(),
+//                employeeReg.getBirthDate(),
+//                employeeReg.getGender(),
+//                employeeReg.getEmail());
+//                newEmployee.setAddresses(
+//                        new Addresses(
+//                                newEmployee.getEmployeeId(), 
+//                                employeeReg.getPrefix(), 
+//                                new Villages(employeeReg.getVillageId())));
+//                newEmployee.setEducations(
+//                        new Educations(
+//                                newEmployee.getEmployeeId(), 
+//                                employeeReg.getPrefix(), 
+//                                employeeReg.getDegree(), 
+//                                new Majors(employeeReg.getMajorId()), 
+//                                new Universities(employeeReg.getUniversityId())));
+//                newEmployee.setContacts(
+//                        new Contacts(
+//                                newEmployee.getEmployeeId(), 
+//                                employeeReg.getPrefix(),
+//                                employeeReg.getPhone(), 
+//                                employeeReg.getLinkedin()));
+//        employeeService.insertByEmployee(newEmployee);
+//        return "insert employee";
+//    }
     
     //POST BY ADDRESS
 //    {

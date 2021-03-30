@@ -1,4 +1,5 @@
 com\dto\ProvinceDistrictDto.class
+com\services\NotificationService.class
 com\entities\Contacts.class
 com\entities\Employees.class
 com\entities\Addresses.class
@@ -13,6 +14,7 @@ com\dto\Employee2ContactDto.class
 com\repositories\ContactRepository.class
 com\services\ProvinceService.class
 com\configuration\SwaggerConfig.class
+com\controllers\UserManagementController.class
 com\entities\Universities.class
 com\entities\Majors.class
 com\entities\Provinces.class
