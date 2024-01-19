@@ -1,2 +1,2 @@
-# 02-SpringBoot-Latihan
-Lagi belajar cuy
+# SpringBoot Latihan
+Belajar pertama kali SpringBoot untuk Bootcamp
